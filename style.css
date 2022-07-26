@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@400&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
     background: #E5E7EB;
     position: relative;
     display: flex;
+    
 }
 
 #menu {
@@ -22,18 +23,17 @@ body {
 #menu .logo {
     display: flex;
     align-items: center;
-    color: white;
-    padding: 30px 0 0 30px;
-    color: white;
+    /* color: white; */
+    padding: 3px 0 0 3px;
 }
 
 #menu .logo img {
-    width: 40px;
-    margin-right: 15px;
+    width: 130px;
+    margin-right: 30px;
 }
 
 #menu .menuitems {
-    margin-top: 40px;
+    margin-top: 3px;
 }
 
 #menu .menuitems li {
@@ -94,6 +94,7 @@ body {
     border: 1px solid #8C4AF2;
     border-radius: 6px;
     background-color: white;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #interface .navigation .search i {
@@ -121,7 +122,6 @@ body {
     font-size: 14px;
     background-color: transparent;
     color: #2d2f33;
-
 }
 
 #interface .navigation .user img {
@@ -174,4 +174,193 @@ body {
     font-size: 15px;
     color: #828997;
 }
+
+/* Keryl's row */
+
+  .firstrow{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr;
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    justify-items: left;
+    /* background: #F9FCFF; */
+  }
+  .popcount{
+    display:flex;
+    width: 100%;
+    gap: 4px;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+  .popcount .popcard{
+    /* height: 106.68px; */
+    width: 255px;
+    background: #FFFFFF;
+    /* border: 1.5px solid #8C4AF2; */
+    padding: 25px 20px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    /*justify-content: center; */
+    box-shadow:3px 3px 8px #C49EFF ;
+  }
+
+  .popcount .popcard i{
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    background: #8C4AF2;
+    margin-right: 15px;
+}  
+
+.popcount .popcard h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #8C4AF2;
+}
+
+.popcount .popcard span {
+    font-size: 15px;
+    color: #C49EFF;
+}
+  
+  .other-card{
+  width: 100%;
+  background: #FFFFFF;
+  /* border: 1.5px solid #B1B1B1; */
+  border-radius: 9px; 
+  box-shadow:3px 3px 8px #C49EFF ;
+  }
+
+  p.firstcol-title {
+    font-weight: 500;
+    font-size: 10.3239px;
+    text-align: justify;
+    justify-items: center;
+    color: #B1B1B1;
+    margin-left: 90px;
+    margin-top: -30px;
+    
+    }
+
+  p.personel{
+    top: 50.24px;
+    font-weight: 500;
+    font-size: 16.5182px;
+    text-align: justify;
+    color: #000000;
+    margin-left: 90px;
+    margin-top: -10px;
+  }
+
+.keryl-i{
+  color: #8C4AF2;
+  width: 22.3px;
+  height: 18.58px;
+  margin-left: 32px;
+  margin-top: 44px;
+}
+
+p.trackpop-text{
+  line-height: 25px;
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 600;
+  color: #8C4AF2;
+  padding: 10px 5px 10px 15px;
+  text-transform: uppercase;
+}
+
+p.pop-text{
+  font-size: 18px;
+  font-weight: 600;
+  color: #8C4AF2;
+  line-height: 25px;
+  text-align: justify;
+  padding: 10px 5px 10px 15px;
+  text-transform: uppercase;
+
+}
+
+#first-pie{
+  display: flex;
+  justify-content: center;
+}
+
+.pie-chart1{
+  height: 150px;
+  width: 150px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  background: conic-gradient(#8C4AF2 0% 35%, #E2EEFF 35% 80%, #C49EFF 80% 100%);
+}
+
+.pie-chart2{
+  height: 150px;
+  width: 150px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  background: conic-gradient(#C49EFF 0% 45%, #8C4AF2 45% 100%);
+  
+}
+
+
+.legend{
+  margin: 20px;
+}
+.leg-cloud{
+  height: 22px;
+  width: 38px;
+  background-color: #C49EFF;
+}
+
+.legend1{
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.legend2{
+  display: flex;
+}
+
+.leg-backend{
+  height: 22px;
+  width: 38px;
+  background-color: #8C4AF2;
+}
+
+.leg-frontend{
+  height: 22px;
+  width: 38px;
+  background-color: #E2EEFF;
+}
+
+.leg-fem{
+  height: 22px;
+  width: 38px;
+  background-color: #C49EFF;
+  margin-bottom: 20px;
+}
+
+.leg-male{
+  height: 22px;
+  width: 38px;
+  background-color: #8C4AF2;
+  margin-bottom: 20px;
+}
+
+.leg-text{
+  height: 20px;
+  font-weight: 500;
+  color: #000000;
+  font-size: 13px;
+  padding-left: 15px;
+}
+
+/* end of keryl's row */
 
