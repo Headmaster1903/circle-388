@@ -1,117 +1,216 @@
 <html>
-    <head>
-        <title>SchoolStat - A simple dashboard for a tech school</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device=width, intital-scale=1.0">
-        <link rel="stylesheet" href="style.css">
 
-        <!-- Font awesome cdn -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-        <script src="https://kit.fontawesome.com/8a06785a7a.js" crossorigin="anonymous"></script>
+<head>
+  <title>SchoolStat - A simple dashboard for a tech school</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device=width, intital-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 
+  <!-- Font awesome cdn -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <script src="https://kit.fontawesome.com/8a06785a7a.js" crossorigin="anonymous"></script>
 
+  <!-- Keryl stylesheet -->
 
-    </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    referrerpolicy="no-referrer" />
+  <!-- end of keryl's stylesheet -->
 
-    <body>
-        
-        <section id="menu">
-            <div class="logo">
-                <!-- <img src="images/logo.png" alt=""> -->
-                <h2>Alt___ <br>School</h2>
-            </div>
+</head>
 
-            <div class="menuitems">
-                <li>
-                    <i class="fa-solid fa-chart-pie"></i><a href="#">Dashboard</a>
-                </li>
+<body>
 
-                <li>
-                    <i class="fa-brands fa-html5"></i><a href="#">Front-End</a>
-                </li>
+  <section id="menu">
+    <div class="logo">
+      <img src="images/logo.png" alt="">
+      <!-- <h2>Alt___ <br>School</h2> -->
+    </div>
 
-                <li>
-                    <i class="fa-brands fa-php"></i><a href="#">Back-End</a>
-                </li>
+    <div class="menuitems">
+      <li>
+        <i class="fa-solid fa-chart-pie"></i><a href="#">Dashboard</a>
+      </li>
 
-                <li>
-                    <i class="fa-solid fa-cloud-arrow-up"></i><a href="#">Cloud Engineering</a>
-                </li>
+      <li>
+        <i class="fa-brands fa-html5"></i><a href="#">Front-End</a>
+      </li>
 
-                <li>
-                    <i class="fa-solid fa-person-chalkboard"></i><a href="#">Instructors</a>
-                </li>
+      <li>
+        <i class="fa-brands fa-php"></i><a href="#">Back-End</a>
+      </li>
 
-            </div>
-        </section>
+      <li>
+        <i class="fa-solid fa-cloud-arrow-up"></i><a href="#">Cloud Engineering</a>
+      </li>
 
-        <section id="interface">
-            <div class="navigation">
-                <div class="n1">
-                    <div class="search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" placeholder="search">
-                    </div>
-                </div>
+      <li>
+        <i class="fa-solid fa-person-chalkboard"></i><a href="#">Insructors</a>
+      </li>
 
-                <div class="user">
-                    <i class="fa-solid fa-bell"></i>
-                    <img src="images/1.png" alt="">
-                </div>
-            </div>
+      <li>
+        <i class="fa-solid fa-person-"></i><a href="#"></a>
+      </li>
 
-            <!-- <h3 class="i-name">
+      <li>
+        <i class="fa-solid fa-person-"></i><a href="#"></a>
+      </li>
+
+      <li>
+        <i class="fa-solid fa-door-open"></i><a href="#">Logout</a>
+      </li>
+
+      <li>
+        <i class="fa-solid fa-person-chalkboa"></i><a href="#"></a>
+      </li>
+
+    </div>
+  </section>
+
+  <section id="interface">
+    <div class="navigation">
+      <div class="n1">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="search">
+        </div>
+      </div>
+
+      <div class="user">
+        <i class="fa-solid fa-bell"></i>
+        <img src="images/1.png" alt="">
+      </div>
+    </div>
+
+    <!-- <h3 class="i-name">
                 Alt School Students/Instructors Record 
             </h3> -->
 
+
+    <div class="values">
+
+      <!-- Keryl row -->
+      <div class="firstrow">
+        <div class="popcount">
+          <!--'popcard' = The small cards on the left side of the dashboard -->
+          <div class="popcard">
+            <!-- <span class="keryl-i"> -->
+                <i class="fa-solid fa-users"></i>
+            <!-- </span> -->
+            <div>
+            <h3>100 Students</h3>
+            <span>Total Students</span>
+        </div>
             
-            <div class="values">
-                <!-- Total students -->
-                <!-- <div class="va1-box">
+          </div>
+          <div class="popcard">
+            <!-- <span class="keryl-i"> -->
+                <i class="fa-solid fa-person-chalkboard"></i>
+            <!-- </span> -->
+            <div>
+                <h3>6 Instructors</h3>
+                <span>Total Instructors</span>
+            </div>
+          </div>
+          <div class="popcard">
+            <!-- <span class="keryl-i"> -->
+                <i class="fa-solid fa-book-bookmark"></i>
+            <!-- </span> -->
+            <div>
+                <h3>3 Tracks</h3>
+                <span>Total Tracks</span>
+            </div>
+          </div>
+        </div>
+        <!--         Other card is for the other two cards on the dashboard -->
+        <div class="other-card">
+          <p class="trackpop-text">Track Population</p>
+          <div id="first-pie">
+            <div class="pie-chart1"></div>
+          </div>
+          <div class="legend">
+            <div class="legend1">
+              <div class="leg-cloud"></div>
+              <div class="leg-text">20 Cloud Students</div>
+            </div>
+            <div class="legend1">
+              <div class="leg-backend"></div>
+              <div class="leg-text">35 Backend Students</div>
+            </div>
+            <div class="legend1">
+              <div class="leg-frontend"></div>
+              <div class="leg-text">45 Frontend Students</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="other-card">
+          <p class="pop-text">Population</p>
+          <div id="first-pie">
+            <div class="pie-chart2"></div>
+          </div>
+          <div class="legend">
+            <div class="legend2">
+              <div class="leg-fem"></div>
+              <div class="leg-text">45 Females</div>
+            </div>
+            <div class="legend2">
+              <div class="leg-male"></div>
+              <div class="leg-text">55 Males</div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of keryl row -->
+    <!-- Total students -->
+    <!-- <div class="va1-box">
                     <i class="fa-solid fa-users"></i>
                     <div>
                         <span>Total Students</span>
                         <h3>100 Students</h3>
                     </div>
                 </div> -->
-                <!-- /Total students end -->
+    <!-- /Total students end -->
 
-                <!-- Total instructors -->
-                <!-- <div class="va1-box">
+    <!-- Total instructors -->
+    <!-- <div class="va1-box">
                     <i class="fa-solid fa-users"></i>
                     <div>
                         <span>Total Instructors</span>
                         <h3>25 Students</h3>
                     </div>
                 </div> -->
-                <!-- /Total Instructors end -->
+    <!-- /Total Instructors end -->
 
-                <!-- Toral Tracks -->
-                <!-- <div class="va1-box">
+    <!-- Toral Tracks -->
+    <!-- <div class="va1-box">
                     <i class="fa-solid fa-users"></i>
                     <div>
                         <span>Total</span>
                         <h3>100 Students</h3>
                     </div>
                 </div> -->
-                <!-- /Total Tracks end -->
+    <!-- /Total Tracks end -->
 
-                <!-- Track Population -->
-                <!-- <div class="va1-box">
+    <!-- Track Population -->
+    <!-- <div class="va1-box">
                     <i class="fa-solid fa-users"></i>
                     <div>
                         <span>Total</span>
                         <h3>100 Studen ts</h3>
                     </div>
                 </div> -->
-                <!-- /Total Population end -->
-            </div>
-        </section>
+    <!-- /Total Population end -->
+    </div>
+  </section>
 
-      <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
   <script src="index.mjs" type="module"></script>
   <!-- // ============= EEND DO NOT EDIT ============== // -->
-    </body>
+</body>
 
 </html>
